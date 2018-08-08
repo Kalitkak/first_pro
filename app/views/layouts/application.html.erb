@@ -15,34 +15,26 @@
 </head>
 <body>
   <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
+  <p class="alert"><%= alert %></p>
 
  <header>
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-  <a class="navbar-brand" href="#carousel-example-generic">Your community</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/simple_pages/about.html.erb">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html.erb">Home</a>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "About", simple_pages_about_path, class: "nav-link" %>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html.erb">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
- </header>
+</header>
 <%= yield %>
-
 </body>
 </html>
