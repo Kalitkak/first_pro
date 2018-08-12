@@ -25,12 +25,12 @@
     </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/simple_pages/about.html.erb">About</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="contact.html.erb">Contact</a>
-      </li>
+        <li class="nav-item active">
+          <%= link_to "About", simple_pages_about_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
+        </li>
     </ul>
   </div>
 </nav>
