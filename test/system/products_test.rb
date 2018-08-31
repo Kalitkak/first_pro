@@ -16,7 +16,7 @@ class ProductsTest < ApplicationSystemTestCase
 
     fill_in "Description", with: @product.descriotion
     fill_in "Image_url", with: @product.image_url
-    fill_in "Title", with: @product.title
+    fill_in "name", with: @product.name
     click_on "Create Product"
 
     assert_text "Product was successfully created"
@@ -28,8 +28,8 @@ class ProductsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Description", with: @product.description
-    fill_in "Image", with: @product.image
-    fill_in "Title", with: @product.title
+    fill_in "Image_url", with: @product.image
+    fill_in "name", with: @product.name
     click_on "Update Product"
 
     assert_text "Product was successfully updated"
